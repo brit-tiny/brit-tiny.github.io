@@ -1,0 +1,1 @@
+Week 3 Code: You assignment in which we inserted our details into an existing template built with HTML and CSS. I took the liberty of making some adjustments, as well as, additions to personalize my page.
