@@ -68,10 +68,25 @@
         .skills ul li {
             display: inline-block;
             background: #6b452c;
-            color: #d7f0e8;
+            color: #FFEEDD;
             padding: 5px 10px;
             margin: 5px 5px 5px 0;
             border-radius: 4px;
+        }
+        .button {
+            font-family:  'Courier New', Courier, monospace, sans-serif;
+            display: inline-block;
+            background-color: #6b452c;
+            color: #FFEEDD;
+            padding: 5px 10px;
+            margin: 0;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        .button:hover {
+            background-color: #926a44;
         }
     </style>
 
@@ -80,10 +95,10 @@
             <section class="header">
                 <h1 style="font-size: 36px;">Brittiny Roberts</h1>
                 <p class="contact">
+                    <!--add a picture here--> 
                     Email:
                     <a href="brittiny.roberts@outlook.com"
-                        >brittiny.roberts@outlook.com</a
-                    >
+                        >brittiny.roberts@outlook.com</a>
                     | Phone: (206) 852-XXXX | LinkedIn:
                     <a href="#">linkedin.com/in/brittinyroberts</a>
                 </p>
@@ -106,7 +121,7 @@
                     <h3>Analyst Long and Short Distance - UPS</h3>
                     <p>January 2016 - Current</p>
                     <p>
-                        carrier management specialist Proficient in managing diverse portfolios of 
+                        Carrier management specialist Proficient in managing diverse portfolios of 
                         carriers, analyzing performance metrics, and driving cost-saving initiatives. 
                         A proven track record of success in optimizing carrier networks, negotiating 
                         contracts, and ensuring seamless logistics operations. Skilled in fostering 
@@ -145,12 +160,13 @@
                         <li>Strong analytical skills</li>
                         <li>Problem Solver</li>
                         <li>Committed to continuous Improvement</li>
-                        <li>Team Leadership</li>
+                        <li>Collaborator</li>
                         <h3>Developing</h3>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>Python</li>
+                        <li>SQL</li>
                         
                     </ul>
                 </div>
@@ -182,6 +198,32 @@
                         learning through Code You, helping me apply real-world data handling and querying 
                         techniques in a practical setting.
                     </p>
+                </div>
+            </section>
+            <section class="feedback">
+                <div>
+                    <h2></h2>
+                    <h3>
+                    <label for="feedback"><strong>Feel free to provide your feedback on my Resume</strong></label>
+                    </h3>
+                        <textarea id="feedback" name="feedback" rows="5" cols="125"></textarea>
+                        <br>
+                        <button type="button" class="button" onclick="showThankYou()">Submit</button>
+                </div>
+                        <div id="thankYouPopup" style="display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%);
+    background-color: #a4d6c7; border: 2px solid #ffff; padding: 20px; z-index: 1000; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    <p>Thank you for your feedback!</p>
+    <button onclick="closePopup()">Close</button>
+
+<script>
+    function showThankYou() {
+        document.getElementById("thankYouPopup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("thankYouPopup").style.display = "none";
+    }
+</script>
                 </div>
             </section>
         </main>
